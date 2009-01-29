@@ -52,6 +52,6 @@ class Blank < Thor
     end
 
     def repo?
-      !@repo.nil? && !@repo == ''
+      !@repo.nil? && @repo != ''
     end
 end
